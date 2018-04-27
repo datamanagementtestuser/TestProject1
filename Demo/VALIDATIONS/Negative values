@@ -1,0 +1,14 @@
+{
+ "DatasetPath": "WEO",
+ "Kind": 3,
+ "Filters": [
+  {
+   "DimensionName": "Frequency",
+   "Elements": [
+    "A"
+   ]
+  }
+ ],
+ "LevelType": "Less",
+ "Threshold": 0
+}

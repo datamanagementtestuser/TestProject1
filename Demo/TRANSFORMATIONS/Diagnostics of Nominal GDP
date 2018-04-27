@@ -1,0 +1,9 @@
+var weo = Knoema.UseDataset("WEO");
+weo.LoadData(weo.Dimensions["Indicator"]["NGDP_USD"]);
+foreach (var country in weo.Dimensions["Country"])
+{
+	var timeseries_annual = weo[country, "NGDP_USD", Frequency.Annual];
+	var timeseries_collapsed_from_quarterly = Collapse(weo[country, "NGDP_USD", Frequency.Quarterly], Frequency.Annual, CollapseType.Average);
+	weo[country, "DIAG_NGDP", Frequency.Annual] = Abs((timeseries_collapsed_from_quarterly - timeseries_annual) / timeseries_annual * 100);
+}
+weo.SaveData(SaveOptions.Update);

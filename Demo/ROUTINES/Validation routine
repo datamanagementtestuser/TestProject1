@@ -1,0 +1,17 @@
+{
+ "Routines": [
+  {
+   "Type": "Validation",
+   "Path": "Missing values"
+  },
+  {
+   "Type": "Validation",
+   "Path": "Negative values"
+  },
+  {
+   "Type": "Validation",
+   "Path": "Zero values"
+  }
+ ],
+ "StopIfError": true
+}

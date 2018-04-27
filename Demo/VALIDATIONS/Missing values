@@ -1,0 +1,13 @@
+{
+ "DatasetPath": "WEO",
+ "Kind": 4,
+ "Filters": [
+  {
+   "DimensionName": "Frequency",
+   "Elements": [
+    "A"
+   ]
+  }
+ ],
+ "MissingValuesType": "InsideData"
+}
