@@ -1,5 +1,5 @@
 {
-   "AutoPush": false,
+   "AutoPush": true,
    "TaskLogDatasetPath": "System\\Task Execution Log",
    "LaunchesDatasetPath": "System\\Validation Launch Log",
    "ApplicationServer": "mck.knoema.com/dmserver"
