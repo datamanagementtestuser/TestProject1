@@ -1,9 +1,0 @@
-{
- "Routines": [
-  {
-   "Type": "Import",
-   "Path": "Import GGM to new dataset"
-  }
- ],
- "StopIfError": true
-}
