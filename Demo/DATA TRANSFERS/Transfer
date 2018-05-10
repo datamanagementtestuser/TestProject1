@@ -1,0 +1,25 @@
+{
+   "TargetDatasetPath": "WEO",
+   "SourceDatasetPath": "IMF World Economic Outlook (WEO), April 2016",
+   "IsSourceDataset": true,
+   "Action": "Update",
+   "DimensionMapping": [
+      {
+         "TargetDimension": "Country",
+         "SourceDimension": "Country"
+      },
+      {
+         "TargetDimension": "Indicator",
+         "SourceDimension": ""
+      }
+   ],
+   "SourceTargetMapping": [],
+   "Filters": [
+      {
+         "DimensionName": "Frequency",
+         "Elements": [
+            "A"
+         ]
+      }
+   ]
+}
