@@ -11,4 +11,4 @@ foreach (var frequency in weo.Dimensions["Frequency"][Frequency.Annual, Frequenc
 	weo["001", "NGDP_USD", frequency, "Units"] = "US Dollars";
 	weo["001", "NGDP_USD", frequency, "Scale"] = Scale.Billion;
 }
-weo.SaveData(SaveOptions.Update);
+//weo.SaveData(SaveOptions.Update);
