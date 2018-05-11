@@ -1,0 +1,16 @@
+{
+ "DatasetPath": "weo_111",
+ "Kind": 9,
+ "Filters": [
+  {
+   "DimensionName": "Frequency",
+   "Elements": [
+    "A"
+   ]
+  }
+ ],
+ "CheckAddedValues": true,
+ "CheckRemovedValues": true,
+ "CheckChangedValues": true,
+ "ComparatorDatasetPath": "weo_12"
+}
