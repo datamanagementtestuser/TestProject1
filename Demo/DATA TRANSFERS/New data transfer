@@ -1,0 +1,36 @@
+{
+   "TargetDatasetPath": "",
+   "SourceDatasetPath": "IMF World Economic Outlook (WEO), April 2016",
+   "IsSourceDataset": true,
+   "Action": "Update",
+   "DimensionMapping": [],
+   "SourceTargetMapping": [],
+   "NewDatasetSettings": {
+      "Host": "mck.knoema.com",
+      "AppId": "",
+      "AppSecret": "",
+      "DatasetName": "weo_12"
+   },
+   "Filters": [
+      {
+         "DimensionName": "Subject",
+         "Elements": [
+            "NGDP_D",
+            "NGDP_R"
+         ]
+      },
+      {
+         "DimensionName": "Country",
+         "Elements": [
+            "AR",
+            "AM"
+         ]
+      },
+      {
+         "DimensionName": "Frequency",
+         "Elements": [
+            "A"
+         ]
+      }
+   ]
+}
