@@ -1,0 +1,25 @@
+{
+ "Routines": [
+  {
+   "Type": "Import",
+   "Path": "Import to WEO"
+  },
+  {
+   "Type": "Transformation",
+   "Path": "Aggregate NGDP to World"
+  },
+  {
+   "Type": "Transformation",
+   "Path": "Aggregate CPI to World"
+  },
+  {
+   "Type": "Validation",
+   "Path": "Pch of NGDP"
+  },
+  {
+   "Type": "Validation",
+   "Path": "Annual NGDP vs Quarterly"
+  }
+ ],
+ "StopIfError": true
+}
