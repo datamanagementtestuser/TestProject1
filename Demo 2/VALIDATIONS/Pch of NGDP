@@ -1,0 +1,19 @@
+{
+ "DatasetPath": "WEO",
+ "Kind": 1,
+ "Filters": [
+  {
+   "DimensionName": "Indicator",
+   "Elements": [
+    "NGDP_USD"
+   ]
+  },
+  {
+   "DimensionName": "Frequency",
+   "Elements": [
+    "A"
+   ]
+  }
+ ],
+ "Threshold": 5
+}
