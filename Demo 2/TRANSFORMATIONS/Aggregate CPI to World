@@ -1,0 +1,13 @@
+var weo = Knoema.UseDataset("WEO");
+weo.LoadData(weo.Dimensions["Indicator"]["PCPI_PCH", "NGDP_USD"], weo.Dimensions["Frequency"][Frequency.Annual]);
+var aggregates = GetTimeSeriesList();
+var weights = GetTimeSeriesList();
+foreach (var country in weo.Dimensions["Country"]["512", "914", "223", "156", "924", "134", "534", "429", "664", "273", "716", "199", "537", "112", "111"])
+{
+	AddToList(aggregates, weo[country, "PCPI_PCH", Frequency.Annual]);
+	AddToList(weights, weo[country, "NGDP_USD", Frequency.Annual]);
+}
+weo["001", "PCPI_PCH", Frequency.Annual] = Aggregation(AggregationType.WeightedAverage, aggregates, weights);
+weo["001", "PCPI_PCH", Frequency.Annual, "Units"] = "Percent";
+weo["001", "PCPI_PCH", Frequency.Annual, "Scale"] = Scale.Unit;
+weo.SaveData(SaveOptions.Update);
