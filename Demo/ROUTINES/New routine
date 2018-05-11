@@ -3,10 +3,6 @@
   {
    "Type": "Import",
    "Path": "New import (2)"
-  },
-  {
-   "Type": "Data transfer",
-   "Path": "New data transfer (2)"
   }
  ],
  "StopIfError": true
