@@ -1,0 +1,14 @@
+var weo = Knoema.UseDataset("WEO");
+weo.LoadData(weo.Dimensions["Indicator"]["NGDP_USD"]);
+foreach (var frequency in weo.Dimensions["Frequency"][Frequency.Annual, Frequency.Quarterly])
+{
+	var aggregates = GetTimeSeriesList();
+	foreach (var country in weo.Dimensions["Country"]["512", "914", "223", "156", "924", "134", "534", "429", "664", "273", "716", "199", "537", "112", "111"])
+	{
+		AddToList(aggregates,weo[country, "NGDP_USD", frequency]);
+	}
+	weo["001", "NGDP_USD", frequency] = Aggregation(AggregationType.Sum, aggregates);
+	weo["001", "NGDP_USD", frequency, "Units"] = "US Dollars";
+	weo["001", "NGDP_USD", frequency, "Scale"] = Scale.Billion;
+}
+weo.SaveData(SaveOptions.Update);
