@@ -3,10 +3,6 @@
   {
    "Type": "Import",
    "Path": "New import (2)"
-  },
-  {
-   "Type": "Validation",
-   "Path": "Missing values"
   }
  ],
  "StopIfError": true
