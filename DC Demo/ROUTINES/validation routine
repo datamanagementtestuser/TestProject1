@@ -1,0 +1,13 @@
+{
+ "Routines": [
+  {
+   "Type": "Validation",
+   "Path": "Pch more than 5 percent for NGDP"
+  },
+  {
+   "Type": "Validation",
+   "Path": "Annoual NGDP vs Quarterly"
+  }
+ ],
+ "StopIfError": true
+}
