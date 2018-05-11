@@ -1,0 +1,20 @@
+{
+ "DatasetPath": "WEO",
+ "Kind": 10,
+ "Filters": [
+  {
+   "DimensionName": "Indicator",
+   "Elements": [
+    "NGDP_USD"
+   ]
+  },
+  {
+   "DimensionName": "Frequency",
+   "Elements": [
+    "A",
+    "Q"
+   ]
+  }
+ ],
+ "Expression": "x.Frequency == Frequency.Annual ? Abs((Collapse(dataset[country, indicator, Frequency.Quarterly], Frequency.Annual, CollapseType.Average) - x) / x * 100) > 1 : null"
+}
