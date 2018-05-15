@@ -12,4 +12,4 @@ foreach (var frequency in weo.Dimensions["Frequency"][Frequency.Annual, Frequenc
 	weo["001", "NGDP_USD", frequency, "Scale"] = Scale.Billion;
 }
 weo.SaveData(SaveOptions.Update);
-//www111
+//www1112
