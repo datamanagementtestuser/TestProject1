@@ -1,5 +1,5 @@
 {
-   "AutoPush": false,
+   "AutoPush": true,
    "TaskLogDatasetPath": "System\\Task Execution Log",
    "LaunchesDatasetPath": "",
    "ApplicationServer": "dm.knoema.org"

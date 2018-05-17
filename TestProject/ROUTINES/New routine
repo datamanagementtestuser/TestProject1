@@ -3,6 +3,10 @@
   {
    "Type": "Transformation",
    "Path": "Test transformation A"
+  },
+  {
+   "Type": "Transformation",
+   "Path": "Test transformation B"
   }
  ],
  "StopIfError": true
