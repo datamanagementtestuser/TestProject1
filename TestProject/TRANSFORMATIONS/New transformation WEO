@@ -1,0 +1,4 @@
+var weo = Knoema.UseDataset("WEO");
+weo.LoadData();
+weo["512", "NGDP_USD", Frequency.Annual] = weo["512", "NGDP_USD", Frequency.Annual] * 1;
+weo.SaveData(SaveOptions.UpdateObservations);

@@ -11,6 +11,10 @@
   {
    "Type": "Transformation",
    "Path": "Test transformation C"
+  },
+  {
+   "Type": "Transformation",
+   "Path": "New transformation WEO"
   }
  ],
  "StopIfError": true
