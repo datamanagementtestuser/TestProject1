@@ -1,0 +1,13 @@
+{
+ "DatasetPath": "national",
+ "Kind": 10,
+ "Filters": [
+  {
+   "DimensionName": "Frequency",
+   "Elements": [
+    "A"
+   ]
+  }
+ ],
+ "Expression": "x>1000000000"
+}
