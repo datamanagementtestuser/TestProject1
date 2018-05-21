@@ -11,10 +11,6 @@
   {
    "Type": "Validation",
    "Path": "national 3"
-  },
-  {
-   "Type": "Validation",
-   "Path": "national 4"
   }
  ],
  "StopIfError": true
