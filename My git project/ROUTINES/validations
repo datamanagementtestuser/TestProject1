@@ -1,0 +1,21 @@
+{
+ "Routines": [
+  {
+   "Type": "Validation",
+   "Path": "national 1"
+  },
+  {
+   "Type": "Validation",
+   "Path": "national 2"
+  },
+  {
+   "Type": "Validation",
+   "Path": "national 3"
+  },
+  {
+   "Type": "Validation",
+   "Path": "national 4"
+  }
+ ],
+ "StopIfError": true
+}
