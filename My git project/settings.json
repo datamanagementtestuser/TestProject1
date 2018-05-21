@@ -1,6 +1,6 @@
 {
    "AutoPush": true,
-   "TaskLogDatasetPath": "System\\Task Execution Log",
-   "LaunchesDatasetPath": "System\\Validation Launch Log",
+   "TaskLogDatasetPath": "System\\Task Execution Log (2)",
+   "LaunchesDatasetPath": "System\\Validation Launch Log (2)",
    "ApplicationServer": "dm.knoema.org"
 }
