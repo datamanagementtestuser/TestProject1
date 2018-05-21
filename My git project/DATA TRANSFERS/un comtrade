@@ -1,0 +1,51 @@
+{
+   "TargetDatasetPath": "",
+   "SourceDatasetPath": "UN Comtrade",
+   "IsSourceDataset": true,
+   "Action": "Update",
+   "DimensionMapping": [],
+   "SourceTargetMapping": [],
+   "NewDatasetSettings": {
+      "Host": "beta.knoema.org",
+      "AppId": "",
+      "AppSecret": "",
+      "DatasetName": "comtrade test"
+   },
+   "Filters": [
+      {
+         "DimensionName": "Reporter",
+         "Elements": [
+            "12",
+            "204",
+            "72",
+            "854",
+            "108",
+            "132",
+            "120",
+            "140",
+            "384",
+            "818",
+            "231",
+            "404",
+            "450",
+            "454",
+            "466",
+            "480",
+            "504",
+            "508",
+            "516",
+            "562",
+            "646",
+            "566",
+            "678"
+         ]
+      },
+      {
+         "DimensionName": "Frequency",
+         "Elements": [
+            "A",
+            "M"
+         ]
+      }
+   ]
+}
