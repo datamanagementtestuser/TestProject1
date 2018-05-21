@@ -1,0 +1,22 @@
+{
+   "TargetDatasetPath": "",
+   "SourceDatasetPath": "national",
+   "IsSourceDataset": true,
+   "Action": "Update",
+   "DimensionMapping": [],
+   "SourceTargetMapping": [],
+   "NewDatasetSettings": {
+      "Host": "beta.knoema.org",
+      "AppId": "",
+      "AppSecret": "",
+      "DatasetName": ""
+   },
+   "Filters": [
+      {
+         "DimensionName": "Frequency",
+         "Elements": [
+            "A"
+         ]
+      }
+   ]
+}
