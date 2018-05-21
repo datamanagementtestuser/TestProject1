@@ -1,0 +1,14 @@
+{
+ "DatasetPath": "national",
+ "Kind": 3,
+ "Filters": [
+  {
+   "DimensionName": "Frequency",
+   "Elements": [
+    "A"
+   ]
+  }
+ ],
+ "LevelType": "Equal",
+ "Threshold": 0
+}
