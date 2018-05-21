@@ -1,0 +1,12 @@
+{
+ "DatasetPath": "national",
+ "Kind": 8,
+ "Filters": [
+  {
+   "DimensionName": "Frequency",
+   "Elements": [
+    "A"
+   ]
+  }
+ ]
+}
