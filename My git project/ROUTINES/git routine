@@ -1,0 +1,9 @@
+{
+ "Routines": [
+  {
+   "Type": "Import",
+   "Path": "wdi my"
+  }
+ ],
+ "StopIfError": true
+}
