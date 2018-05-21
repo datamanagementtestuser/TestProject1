@@ -1,0 +1,10 @@
+var myWDI2 = Knoema.UseDataset("My WDI 2");
+myWDI2.LoadData();
+foreach (var country in myWDI2.Dimensions["Country"])
+{
+	foreach (var series in myWDI2.Dimensions["Series"])
+	{
+		myWDI2[country, series, Frequency.Annual, "Value"] = myWDI2[country, series, Frequency.Annual, "Value"]*1;
+	}
+}
+myWDI2.SaveData(SaveOptions.UpdateObservations);
