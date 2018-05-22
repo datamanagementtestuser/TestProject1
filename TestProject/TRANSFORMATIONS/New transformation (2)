@@ -10,7 +10,11 @@ foreach (var reporter in unComtrade.Dimensions["Reporter"])
 			{
 				foreach (var measure in unComtrade.Dimensions["Measure"])
 				{
-					unComtrade[reporter, commodity, partner, tradeFlow, measure, Frequency.Annual, "Value"] = unComtrade[reporter, commodity, partner, tradeFlow, measure, Frequency.Annual, "Value"]*1;
+                    var ts = unComtrade[reporter, commodity, partner, tradeFlow, measure, Frequency.Annual];
+                    if (!IsEmpty(ts))
+                    {
+                        unComtrade[reporter, commodity, partner, tradeFlow, measure, Frequency.Annual] = ts*1;
+                    }
 				}
 			}
 		}
