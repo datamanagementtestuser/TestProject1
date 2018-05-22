@@ -1,5 +1,4 @@
 var unComtrade = Knoema.UseDataset("UN Comtrade");
-unComtrade.LoadData(unComtrade.Dimensions["Reporter"]["12", "204", "72", "854", "108", "132"]);
 foreach (var reporter in unComtrade.Dimensions["Reporter"])
 {
 	foreach (var commodity in unComtrade.Dimensions["Commodity"])
@@ -16,4 +15,3 @@ foreach (var reporter in unComtrade.Dimensions["Reporter"])
 		}
 	}
 }
-unComtrade.SaveData(SaveOptions.Update);
