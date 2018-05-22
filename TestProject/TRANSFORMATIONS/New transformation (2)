@@ -2,6 +2,7 @@ var unComtrade = Knoema.UseDataset("UN Comtrade");
 WriteLine("Start calculating");
 foreach (var reporter in unComtrade.Dimensions["Reporter"])
 {
+    WriteLine(reporter);
 	foreach (var commodity in unComtrade.Dimensions["Commodity"])
 	{
 		foreach (var partner in unComtrade.Dimensions["Partner"])
