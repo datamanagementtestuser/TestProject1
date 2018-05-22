@@ -1,0 +1,19 @@
+var unComtrade = Knoema.UseDataset("UN Comtrade");
+WriteLine("Start calculating");
+foreach (var reporter in unComtrade.Dimensions["Reporter"])
+{
+	foreach (var commodity in unComtrade.Dimensions["Commodity"])
+	{
+		foreach (var partner in unComtrade.Dimensions["Partner"])
+		{
+			foreach (var tradeFlow in unComtrade.Dimensions["Trade Flow"])
+			{
+				foreach (var measure in unComtrade.Dimensions["Measure"])
+				{
+					unComtrade[reporter, commodity, partner, tradeFlow, measure, Frequency.Annual, "Value"] = unComtrade[reporter, commodity, partner, tradeFlow, measure, Frequency.Annual, "Value"]*1;
+				}
+			}
+		}
+	}
+}
+WriteLine("End calculating");
