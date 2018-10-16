@@ -1,0 +1,33 @@
+{
+   "TargetDatasetPath": "weo_small",
+   "SourceDatasetPath": "WEO",
+   "IsSourceDataset": true,
+   "AddNewElementsToDimensions": false,
+   "Action": "Update",
+   "DimensionMapping": [
+      {
+         "TargetDimension": "Country",
+         "SourceDimension": "Country"
+      },
+      {
+         "TargetDimension": "Indicator",
+         "SourceDimension": "Indicator"
+      }
+   ],
+   "SourceTargetMapping": [],
+   "Filters": [
+      {
+         "DimensionName": "Country",
+         "Elements": [
+            "156"
+         ]
+      },
+      {
+         "DimensionName": "Frequency",
+         "Elements": [
+            "A",
+            "Q"
+         ]
+      }
+   ]
+}
