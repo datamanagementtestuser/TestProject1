@@ -1,0 +1,27 @@
+{
+ "DatasetPath": "WEO",
+ "Kind": 3,
+ "Filters": [
+  {
+   "DimensionName": "Country",
+   "Elements": [
+    "134"
+   ]
+  },
+  {
+   "DimensionName": "Indicator",
+   "Elements": [
+    "NGDP_USD"
+   ]
+  },
+  {
+   "DimensionName": "Frequency",
+   "Elements": [
+    "A",
+    "Q"
+   ]
+  }
+ ],
+ "LevelType": "Less",
+ "Threshold": 0
+}
