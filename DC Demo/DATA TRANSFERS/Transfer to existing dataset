@@ -1,5 +1,5 @@
 {
-   "TargetDatasetPath": "weo_small (3)",
+   "TargetDatasetPath": "weo_small",
    "SourceDatasetPath": "WEO",
    "IsSourceDataset": true,
    "AddNewElementsToDimensions": false,
