@@ -68,5 +68,6 @@
    "DateFormat": "",
    "CultureId": "",
    "EmptyValueText": "",
-   "ReviewData": false
+   "ReviewData": false,
+   "AddNewElementsToDimensions": false
 }
