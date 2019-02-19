@@ -21,5 +21,14 @@
    "Path": "Annoual NGDP vs Quarterly"
   }
  ],
- "StopIfError": true
+ "StopIfError": true,
+ "Notifications": [
+  {
+   "Condition": "OnSuccessOrFail",
+   "To": "pimenov@knoema.com",
+   "Subject": "test",
+   "Body": "test",
+   "AttachLog": false
+  }
+ ]
 }
