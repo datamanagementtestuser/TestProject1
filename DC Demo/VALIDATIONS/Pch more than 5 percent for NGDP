@@ -11,7 +11,8 @@
   {
    "DimensionName": "Frequency",
    "Elements": [
-    "A"
+    "A",
+    "Q"
    ]
   }
  ],
