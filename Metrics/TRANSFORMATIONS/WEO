@@ -1,0 +1,15 @@
+var weo = Knoema.UseDataset("WEO");
+weo.LoadData();
+foreach (var country in weo.Dimensions["Country"])
+{
+	var indicators_count = 0;
+	foreach (var subject in weo.Dimensions["Subject"])
+	{
+		var ext = !IsEmpty(weo[country, subject, Frequency.Annual]);
+		if (ext)
+		{
+            indicators_count = indicators_count + 1;
+		}
+	}
+    WriteLine(country["name"] + ", " + indicators_count.ToString());
+}

@@ -1,0 +1,15 @@
+var ds = Knoema.UseDataset("WDI");
+ds.LoadData();
+foreach (var country in ds.Dimensions["Country"])
+{
+	var indicators_count = 0;
+	foreach (var subject in ds.Dimensions["Series"])
+	{
+		var ext = !IsEmpty(ds[country, subject, Frequency.Annual]);
+		if (ext)
+		{
+            indicators_count = indicators_count + 1;
+		}
+	}
+    WriteLine(country["name"] + ", " + indicators_count.ToString());
+}
