@@ -1,0 +1,10 @@
+{
+ "Routines": [
+  {
+   "Type": "Import",
+   "Path": "Import to WEO"
+  }
+ ],
+ "StopIfError": true,
+ "Notifications": []
+}
