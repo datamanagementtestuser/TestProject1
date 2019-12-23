@@ -1,6 +1,6 @@
 {
-   "AutoPush": true,
-   "TaskLogDatasetPath": "System\\Task Execution Log",
+   "TaskLogDatasetPath": "System\\Task Execution Log (2)",
    "LaunchesDatasetPath": "System\\Validation Launch Log",
-   "ApplicationServer": "mck.knoema.com/dmserver"
+   "ApplicationServer": "mck.knoema.com/dmserver",
+   "UploadToolRepository": "..\\..\\..\\Program Files\\Knoema\\Data Management 2"
 }
