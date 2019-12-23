@@ -1,34 +1,26 @@
 {
- "Routines": [
-  {
-   "Type": "Import",
-   "Path": "Import to WEO"
-  },
-  {
-   "Type": "Transformation",
-   "Path": "Aggregation NGDP to World"
-  },
-  {
-   "Type": "Transformation",
-   "Path": "Aggregation CPI to World"
-  },
-  {
-   "Type": "Validation",
-   "Path": "Pch more than 5 percent for NGDP"
-  },
-  {
-   "Type": "Validation",
-   "Path": "Annoual NGDP vs Quarterly"
-  }
- ],
- "StopIfError": true,
- "Notifications": [
-  {
-   "Condition": "OnSuccessOrFail",
-   "To": "pimenov@knoema.com",
-   "Subject": "test",
-   "Body": "test",
-   "AttachLog": false
-  }
- ]
+   "Routines": [
+      {
+         "Type": "Import",
+         "Path": "Import to WEO"
+      },
+      {
+         "Type": "Transformation",
+         "Path": "Aggregation NGDP to World"
+      },
+      {
+         "Type": "Transformation",
+         "Path": "Aggregation CPI to World"
+      }
+   ],
+   "StopIfError": true,
+   "Notifications": [
+      {
+         "Condition": "OnSuccessOrFail",
+         "To": "pimenov@knoema.com",
+         "Subject": "test",
+         "Body": "test",
+         "AttachLog": false
+      }
+   ]
 }
