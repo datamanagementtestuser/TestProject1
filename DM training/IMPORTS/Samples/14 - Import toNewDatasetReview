@@ -1,0 +1,192 @@
+{
+   "TargetDataset": {
+      "DatasetPath": "",
+      "Metadata": {
+         "Name": "Weo test dataset2",
+         "DatasetId": "",
+         "Host": "knoema.com",
+         "Description": "",
+         "Source": "",
+         "ReferenceUrl": "",
+         "PublicationDate": "",
+         "AccessedOn": "",
+         "NextReleaseDate": "",
+         "UpdatePriority": ""
+      }
+   },
+   "DataSource": {
+      "Id": "CSV",
+      "File": "C:\\Temp\\Training\\ExportToCsvWithErrors.csv",
+      "Delimiter": ",",
+      "TableTop": 0,
+      "TableLeft": 0
+   },
+   "Bindings": {
+      "Mappings": [
+         {
+            "SourceField": "0",
+            "TargetType": "Dimension",
+            "DimensionName": "Country",
+            "DimensionAttribute": "Id",
+            "IgnoreList": [
+               ""
+            ],
+            "ReplaceMap": []
+         },
+         {
+            "SourceField": "1",
+            "TargetType": "Dimension",
+            "DimensionName": "Country",
+            "DimensionAttribute": "Name",
+            "IgnoreList": [],
+            "ReplaceMap": []
+         },
+         {
+            "SourceField": "2",
+            "TargetType": "Dimension",
+            "DimensionName": "Country",
+            "DimensionAttribute": "Level",
+            "IgnoreList": [],
+            "ReplaceMap": []
+         },
+         {
+            "SourceField": "3",
+            "TargetType": "Dimension",
+            "DimensionName": "Country",
+            "DimensionAttribute": "RegionId",
+            "IgnoreList": [],
+            "ReplaceMap": []
+         },
+         {
+            "SourceField": "4",
+            "TargetType": "Dimension",
+            "DimensionName": "Country",
+            "DimensionAttribute": "ISO",
+            "IgnoreList": [],
+            "ReplaceMap": []
+         },
+         {
+            "SourceField": "5",
+            "TargetType": "Dimension",
+            "DimensionName": "Country",
+            "DimensionAttribute": "ParentId",
+            "IgnoreList": [],
+            "ReplaceMap": []
+         },
+         {
+            "SourceField": "6",
+            "TargetType": "Dimension",
+            "DimensionName": "Country",
+            "DimensionAttribute": "ParentName",
+            "IgnoreList": [],
+            "ReplaceMap": []
+         },
+         {
+            "SourceField": "7",
+            "TargetType": "Dimension",
+            "DimensionName": "Subject",
+            "DimensionAttribute": "Id",
+            "IgnoreList": [],
+            "ReplaceMap": []
+         },
+         {
+            "SourceField": "8",
+            "TargetType": "Dimension",
+            "DimensionName": "Subject",
+            "DimensionAttribute": "Name",
+            "IgnoreList": [],
+            "ReplaceMap": []
+         },
+         {
+            "SourceField": "9",
+            "TargetType": "Dimension",
+            "DimensionName": "Subject",
+            "DimensionAttribute": "Level",
+            "IgnoreList": [],
+            "ReplaceMap": []
+         },
+         {
+            "SourceField": "10",
+            "TargetType": "Dimension",
+            "DimensionName": "Subject",
+            "DimensionAttribute": "SubjectNotes",
+            "IgnoreList": [],
+            "ReplaceMap": []
+         },
+         {
+            "SourceField": "11",
+            "TargetType": "Dimension",
+            "DimensionName": "Subject",
+            "DimensionAttribute": "Subject Name as per IMF",
+            "IgnoreList": [],
+            "ReplaceMap": []
+         },
+         {
+            "SourceField": "12",
+            "TargetType": "Dimension",
+            "DimensionName": "Subject",
+            "DimensionAttribute": "ParentId",
+            "IgnoreList": [],
+            "ReplaceMap": []
+         },
+         {
+            "SourceField": "13",
+            "TargetType": "Dimension",
+            "DimensionName": "Subject",
+            "DimensionAttribute": "ParentName",
+            "IgnoreList": [],
+            "ReplaceMap": []
+         },
+         {
+            "SourceField": "14",
+            "TargetType": "Unit",
+            "IgnoreList": [],
+            "ReplaceMap": []
+         },
+         {
+            "SourceField": "15",
+            "TargetType": "Date",
+            "IgnoreList": [
+               "Year2001"
+            ],
+            "ReplaceMap": [
+               {
+                  "Value": "20066",
+                  "ReplaceWith": "2006"
+               },
+               {
+                  "Value": "2008Y1",
+                  "ReplaceWith": "2008"
+               }
+            ]
+         },
+         {
+            "SourceField": "16",
+            "TargetType": "Value",
+            "IgnoreList": [
+               "53313.654s"
+            ],
+            "ReplaceMap": [
+               {
+                  "Value": "t16359.386",
+                  "ReplaceWith": "16359"
+               }
+            ]
+         }
+      ],
+      "Fixed": []
+   },
+   "Action": "Update",
+   "DateFormat": "",
+   "CultureId": "",
+   "EmptyValueText": "",
+   "ReviewData": true,
+   "AddNewElementsToDimensions": false,
+   "ValidationRules": {
+      "UseMissingValuesRule": false,
+      "UseMissingUnitsRule": false,
+      "UseMissingHierarchyRule": false,
+      "UseMissingRegionRule": false,
+      "UseDuplicateNamesRule": false
+   }
+}

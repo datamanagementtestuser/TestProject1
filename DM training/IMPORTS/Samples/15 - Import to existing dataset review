@@ -1,0 +1,97 @@
+{
+   "TargetDataset": {
+      "DatasetPath": "Samples\\Weo test dataset",
+      "Metadata": {
+         "Name": "Weo test dataset",
+         "DatasetId": "",
+         "Host": "knoema.com",
+         "Description": "",
+         "Source": "",
+         "ReferenceUrl": "",
+         "PublicationDate": "",
+         "AccessedOn": "",
+         "NextReleaseDate": "",
+         "UpdatePriority": ""
+      }
+   },
+   "DataSource": {
+      "Id": "XLSX",
+      "File": "C:\\Temp\\Training\\WEOOct2019allWithErrors.xlsx",
+      "Sheet": "",
+      "UnpivotDataTop": 1,
+      "UnpivotDataLeft": 15,
+      "TableTop": 0,
+      "TableLeft": 0
+   },
+   "Bindings": {
+      "Mappings": [
+         {
+            "SourceField": "0",
+            "TargetType": "Dimension",
+            "DimensionName": "Country",
+            "DimensionAttribute": "Id",
+            "IgnoreList": [
+               ""
+            ],
+            "ReplaceMap": []
+         },
+         {
+            "SourceField": "2",
+            "TargetType": "Dimension",
+            "DimensionName": "Subject",
+            "DimensionAttribute": "Id",
+            "IgnoreList": [
+               ""
+            ],
+            "ReplaceMap": []
+         },
+         {
+            "SourceField": "14",
+            "TargetType": "Unit",
+            "IgnoreList": [],
+            "ReplaceMap": []
+         },
+         {
+            "SourceField": "15",
+            "TargetType": "Date",
+            "IgnoreList": [
+               "Estimates Start After"
+            ],
+            "ReplaceMap": [
+               {
+                  "Value": "_1995",
+                  "ReplaceWith": "1995"
+               }
+            ]
+         },
+         {
+            "SourceField": "16",
+            "TargetType": "Value",
+            "IgnoreList": [
+               "n/a",
+               "n/aa"
+            ],
+            "ReplaceMap": [
+               {
+                  "Value": "a32.344",
+                  "ReplaceWith": "32.344"
+               }
+            ]
+         }
+      ],
+      "Fixed": []
+   },
+   "Action": "Update",
+   "DateFormat": "",
+   "CultureId": "",
+   "EmptyValueText": "",
+   "ReviewData": true,
+   "AddNewElementsToDimensions": false,
+   "ValidationRules": {
+      "UseMissingValuesRule": false,
+      "UseMissingUnitsRule": false,
+      "UseMissingHierarchyRule": false,
+      "UseMissingRegionRule": false,
+      "UseDuplicateNamesRule": false
+   }
+}

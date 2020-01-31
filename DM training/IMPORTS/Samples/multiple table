@@ -1,0 +1,39 @@
+{
+   "TargetDataset": {
+      "DatasetPath": "",
+      "Metadata": {
+         "Name": "",
+         "DatasetId": "",
+         "Host": "beta.knoema.org",
+         "Description": "",
+         "Source": "",
+         "ReferenceUrl": "",
+         "PublicationDate": "",
+         "AccessedOn": "",
+         "NextReleaseDate": "",
+         "UpdatePriority": ""
+      }
+   },
+   "DataSource": {
+      "Id": "MultipleTableXLSX",
+      "File": "C:\\Temp\\Import files\\MultiTable.xlsx",
+      "Sheet": ""
+   },
+   "Bindings": {
+      "Mappings": [],
+      "Fixed": []
+   },
+   "Action": "Update",
+   "DateFormat": "",
+   "CultureId": "",
+   "EmptyValueText": "",
+   "ReviewData": false,
+   "AddNewElementsToDimensions": false,
+   "ValidationRules": {
+      "UseMissingValuesRule": false,
+      "UseMissingUnitsRule": false,
+      "UseMissingHierarchyRule": false,
+      "UseMissingRegionRule": false,
+      "UseDuplicateNamesRule": false
+   }
+}
