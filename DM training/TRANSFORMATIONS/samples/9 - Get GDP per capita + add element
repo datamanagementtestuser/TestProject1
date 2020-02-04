@@ -1,0 +1,1 @@
+var weoTestDataset = Knoema.UseDataset("Samples\\Weo test dataset");
