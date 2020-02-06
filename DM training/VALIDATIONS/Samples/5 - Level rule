@@ -1,0 +1,20 @@
+{
+   "DatasetPath": "Weo test",
+   "Kind": 3,
+   "Filters": [
+      {
+         "DimensionName": "Country",
+         "Elements": [
+            "534"
+         ]
+      },
+      {
+         "DimensionName": "Frequency",
+         "Elements": [
+            "A"
+         ]
+      }
+   ],
+   "LevelType": "More",
+   "Threshold": 1000000
+}

@@ -1,0 +1,20 @@
+{
+   "DatasetPath": "IMF_ World Economic Outlook (WEO), October 2018",
+   "Kind": 4,
+   "Filters": [
+      {
+         "DimensionName": "Country",
+         "Elements": [
+            "534"
+         ]
+      },
+      {
+         "DimensionName": "Frequency",
+         "Elements": [
+            "A"
+         ]
+      }
+   ],
+   "MissingValuesType": "InsideData",
+   "SkipWeekendDataForDailyFrequency": false
+}

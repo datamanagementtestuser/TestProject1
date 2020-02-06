@@ -1,0 +1,19 @@
+{
+   "DatasetPath": "checkDuplicates2",
+   "Kind": 8,
+   "Filters": [
+      {
+         "DimensionName": "Time",
+         "Elements": [
+            "2009M1-2019M12"
+         ]
+      },
+      {
+         "DimensionName": "Frequency",
+         "Elements": [
+            "A",
+            "M"
+         ]
+      }
+   ]
+}
