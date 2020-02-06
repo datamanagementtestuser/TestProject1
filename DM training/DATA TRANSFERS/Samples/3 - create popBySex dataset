@@ -1,0 +1,36 @@
+{
+   "TargetDatasetPath": "",
+   "SourceDatasetPath": "Population Estimates and Projections",
+   "IsSourceDataset": true,
+   "AddNewElementsToDimensions": false,
+   "Action": "Update",
+   "DimensionMapping": [],
+   "SourceTargetMapping": [],
+   "NewDatasetSettings": {
+      "Host": "beta.knoema.org",
+      "AppId": "",
+      "AppSecret": "",
+      "DatasetName": "popBySex",
+      "Source": "",
+      "ReferenceUrl": "",
+      "UpdatePriority": ""
+   },
+   "Filters": [
+      {
+         "DimensionName": "Series",
+         "Elements": [
+            "SP.POP.TOTL.FE.IN",
+            "SP.POP.TOTL.MA.IN"
+         ]
+      },
+      {
+         "DimensionName": "Frequency",
+         "Elements": [
+            "A"
+         ]
+      }
+   ],
+   "PublicationDate": "",
+   "AccessedOn": "",
+   "NextReleaseDate": ""
+}
