@@ -1,0 +1,18 @@
+var popbysex = Knoema.UseDataset("popBySex");
+popbysex.LoadData();
+foreach (var series in popbysex)
+{
+	if (!popbysex[series.Coordinate].IsEmpty)
+	{
+		if (series.Coordinate["Attributes"] == "Value")
+		{
+			if (popbysex[series.Coordinate][new DateTime(2000, 1, 1)] != null)
+			{
+				if ((double)popbysex[series.Coordinate][new DateTime(2000, 1, 1)] >20000000)
+				{
+					WriteLine(series.Coordinate["Country"]["Name"]  + " - " + series.Coordinate["Series"]["Name"] + ":  " + popbysex[series.Coordinate][new DateTime(2000, 1, 1)]);
+				}
+			}
+		}
+	}
+}
