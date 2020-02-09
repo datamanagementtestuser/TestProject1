@@ -4,16 +4,7 @@
    "IsSourceDataset": false,
    "AddNewElementsToDimensions": false,
    "Action": "Overwrite",
-   "DimensionMapping": [
-      {
-         "TargetDimension": "Country",
-         "SourceDimension": "Country"
-      },
-      {
-         "TargetDimension": "Subject",
-         "SourceDimension": "Subject"
-      }
-   ],
+   "DimensionMapping": [],
    "SourceTargetMapping": [
       {
          "Field": "Output unit",

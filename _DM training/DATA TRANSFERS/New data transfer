@@ -1,0 +1,13 @@
+{
+   "TargetDatasetPath": "Weo test",
+   "SourceDatasetPath": "",
+   "IsSourceDataset": false,
+   "AddNewElementsToDimensions": false,
+   "Action": "Update",
+   "DimensionMapping": [],
+   "SourceTargetMapping": [],
+   "Filters": null,
+   "PublicationDate": "",
+   "AccessedOn": "",
+   "NextReleaseDate": ""
+}
