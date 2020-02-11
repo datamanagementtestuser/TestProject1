@@ -1,0 +1,14 @@
+{
+   "Routines": [
+      {
+         "Type": "Command",
+         "Path": "Samples\\01 - Execute data tool"
+      },
+      {
+         "Type": "Import",
+         "Path": "Samples\\21 - Import data from tool"
+      }
+   ],
+   "StopIfError": true,
+   "Notifications": []
+}

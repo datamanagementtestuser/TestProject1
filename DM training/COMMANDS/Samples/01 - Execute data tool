@@ -1,0 +1,7 @@
+{
+   "File": "C:\\Temp\\Training\\GetDataTool\\getDataTool.exe",
+   "Arguments": "C:\\Temp\\Training\\data.csv",
+   "WorkingDirectory": "",
+   "ProcessOutputPattern": "",
+   "ProcessErrorPattern": ""
+}

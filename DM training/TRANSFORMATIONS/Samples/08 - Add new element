@@ -1,0 +1,10 @@
+var wdiCopy = Knoema.UseDataset("Samples\\Wdi copy");
+wdiCopy.LoadData(wdiCopy.Dimensions["Series"]["NY.GDP.MKTP.CD", "SP.POP.TOTL"]);
+var newElement = AddElement(wdiCopy, "Series", "GDP_PC3");
+newElement["Name"] = "GDP per capita 3";
+newElement["Order"] = 101;
+foreach (var country in wdiCopy.Dimensions["Country"])
+{
+	wdiCopy[country, "GDP_PC3", Frequency.Annual] = wdiCopy[country, "NY.GDP.MKTP.CD", Frequency.Annual]/wdiCopy[country, "SP.POP.TOTL", Frequency.Annual];
+}
+wdiCopy.SaveData(SaveOptions.Update);

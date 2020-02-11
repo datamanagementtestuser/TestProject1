@@ -1,0 +1,22 @@
+var wdiCopy = Knoema.UseDataset("Samples\\Wdi copy");
+wdiCopy.LoadData(new Period(new DateTime(2006, 1, 1), new DateTime(2016, 12, 1)), wdiCopy.Dimensions["Series"]["SP.POP.TOTL"]);
+var allParents = wdiCopy.Dimensions["Country"].GroupBy("Level", 1);
+foreach (var parent in allParents)
+{
+	var seriesList = GetTimeSeriesList();
+	var childElements = wdiCopy.Dimensions["Country"].GroupBy("Parent", parent);
+	foreach (var child in childElements)
+	{
+		var series = wdiCopy[child, "SP.POP.TOTL", Frequency.Annual];
+		if (!series.IsEmpty)
+		{
+			AddToList(seriesList, series);
+		}
+	}
+	if (seriesList.Count > 0)
+	{
+		var aggregatedSeries = Aggregation(AggregationType.Sum, seriesList);
+		wdiCopy[parent, "SP.POP.TOTL", Frequency.Annual] = aggregatedSeries;
+	}
+	wdiCopy.SaveData(SaveOptions.Update);
+}

@@ -1,0 +1,7 @@
+var populationBySex = Knoema.UseDataset("Samples\\Population by sex");
+populationBySex.LoadData();
+foreach (var country in populationBySex.Dimensions["Country"])
+{
+	populationBySex[country, "SP.POP.TOTL", Frequency.Annual] = populationBySex[country, "SP.POP.TOTL.FE.IN", Frequency.Annual]+populationBySex[country, "SP.POP.TOTL.MA.IN", Frequency.Annual];
+}
+populationBySex.SaveData(SaveOptions.Update);

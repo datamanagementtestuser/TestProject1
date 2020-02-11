@@ -1,0 +1,12 @@
+var populationBySex = Knoema.UseDataset("Samples\\Population by sex");
+populationBySex.LoadData();
+foreach (var country in populationBySex.Dimensions["Country"])
+{
+	if (populationBySex[country, "SP.POP.TOTL.FE.IN", Frequency.Annual, "Value"][new DateTime(2000, 1, 1)] != null)
+	{
+		if ((double)populationBySex[country, "SP.POP.TOTL.FE.IN", Frequency.Annual, "Value"][new DateTime(2000, 1, 1)] > 200000000)
+		{
+			WriteLine(country["Name"] + ": " + populationBySex[country, "SP.POP.TOTL.FE.IN", Frequency.Annual][new DateTime(2000, 1, 1)]);
+		}
+	}
+}

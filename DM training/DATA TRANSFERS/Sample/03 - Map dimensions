@@ -1,0 +1,38 @@
+{
+   "TargetDatasetPath": "Samples\\Data transfer target dataset",
+   "SourceDatasetPath": "Samples\\Weo test dataset",
+   "IsSourceDataset": true,
+   "AddNewElementsToDimensions": false,
+   "Action": "Overwrite",
+   "DimensionMapping": [
+      {
+         "TargetDimension": "Country",
+         "SourceDimension": "Country"
+      },
+      {
+         "TargetDimension": "Indicator",
+         "SourceDimension": "Subject"
+      }
+   ],
+   "SourceTargetMapping": [],
+   "Filters": [
+      {
+         "DimensionName": "Country",
+         "Elements": [
+            "935",
+            "128",
+            "922",
+            "172"
+         ]
+      },
+      {
+         "DimensionName": "Frequency",
+         "Elements": [
+            "A"
+         ]
+      }
+   ],
+   "PublicationDate": "",
+   "AccessedOn": "",
+   "NextReleaseDate": ""
+}

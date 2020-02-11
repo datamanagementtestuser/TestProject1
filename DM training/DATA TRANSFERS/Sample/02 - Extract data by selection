@@ -1,0 +1,37 @@
+{
+   "TargetDatasetPath": "",
+   "SourceDatasetPath": "Samples\\World Development Indicators (WDI)",
+   "IsSourceDataset": true,
+   "AddNewElementsToDimensions": false,
+   "Action": "Update",
+   "DimensionMapping": [],
+   "SourceTargetMapping": [],
+   "NewDatasetSettings": {
+      "Host": "mck.knoema.com",
+      "AppId": "",
+      "AppSecret": "",
+      "DatasetName": "Population by sex",
+      "Source": "",
+      "ReferenceUrl": "",
+      "UpdatePriority": ""
+   },
+   "Filters": [
+      {
+         "DimensionName": "Series",
+         "Elements": [
+            "SP.POP.TOTL.FE.IN",
+            "SP.POP.TOTL.MA.IN",
+            "SP.POP.TOTL"
+         ]
+      },
+      {
+         "DimensionName": "Frequency",
+         "Elements": [
+            "A"
+         ]
+      }
+   ],
+   "PublicationDate": "",
+   "AccessedOn": "",
+   "NextReleaseDate": ""
+}

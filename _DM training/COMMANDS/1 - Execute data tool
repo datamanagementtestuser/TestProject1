@@ -1,7 +1,0 @@
-{
-   "File": "C:\\2020\\02\\prepareData\\UploadTool.Executer\\bin\\Release\\netcoreapp2.0\\publish\\DataUtil.exe",
-   "Arguments": "knoema.com ECBRTD2017 ECBRTD2017 C:\\Temp\\data.csv C:\\Temp\\meta",
-   "WorkingDirectory": "",
-   "ProcessOutputPattern": "",
-   "ProcessErrorPattern": ""
-}

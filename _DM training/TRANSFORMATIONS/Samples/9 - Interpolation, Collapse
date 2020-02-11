@@ -1,5 +1,0 @@
-var wdiCopy = Knoema.UseDataset("WDI copy");
-wdiCopy.LoadData(wdiCopy.Dimensions["Country"]["IND"], wdiCopy.Dimensions["Series"]["NY.GDP.MKTP.CD"]);
-wdiCopy["IND", "NY.GDP.MKTP.CD", Frequency.Monthly] = Interpolate(wdiCopy["IND", "NY.GDP.MKTP.CD", Frequency.Annual], InterpolateType.Geometric, Frequency.Monthly, 3);
-wdiCopy["IND", "NY.GDP.MKTP.CD", Frequency.Quarterly] = Collapse(wdiCopy["IND", "NY.GDP.MKTP.CD", Frequency.Monthly], Frequency.Quarterly, CollapseType.Average);
-wdiCopy.SaveData(SaveOptions.Update);

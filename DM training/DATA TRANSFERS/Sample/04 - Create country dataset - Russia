@@ -1,0 +1,35 @@
+{
+   "TargetDatasetPath": "",
+   "SourceDatasetPath": "Samples\\Weo test dataset copy",
+   "IsSourceDataset": true,
+   "AddNewElementsToDimensions": false,
+   "Action": "Update",
+   "DimensionMapping": [],
+   "SourceTargetMapping": [],
+   "NewDatasetSettings": {
+      "Host": "mck.knoema.com",
+      "AppId": "",
+      "AppSecret": "",
+      "DatasetName": "Country dataset - Russia",
+      "Source": "",
+      "ReferenceUrl": "",
+      "UpdatePriority": ""
+   },
+   "Filters": [
+      {
+         "DimensionName": "Country",
+         "Elements": [
+            "922"
+         ]
+      },
+      {
+         "DimensionName": "Frequency",
+         "Elements": [
+            "A"
+         ]
+      }
+   ],
+   "PublicationDate": "",
+   "AccessedOn": "",
+   "NextReleaseDate": ""
+}

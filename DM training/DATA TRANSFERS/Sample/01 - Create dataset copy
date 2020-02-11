@@ -1,0 +1,27 @@
+{
+   "TargetDatasetPath": "",
+   "SourceDatasetPath": "Samples\\Weo test dataset",
+   "IsSourceDataset": true,
+   "AddNewElementsToDimensions": false,
+   "Action": "Update",
+   "DimensionMapping": [],
+   "SourceTargetMapping": [],
+   "NewDatasetSettings": {
+      "Host": "mck.knoema.com",
+      "AppId": "",
+      "AppSecret": "",
+      "DatasetName": "Weo test dataset copy",
+      "Source": "",
+      "ReferenceUrl": "",
+      "UpdatePriority": ""
+   },
+   "Filters": [
+      {
+         "DimensionName": "Frequency",
+         "Elements": []
+      }
+   ],
+   "PublicationDate": "",
+   "AccessedOn": "",
+   "NextReleaseDate": ""
+}

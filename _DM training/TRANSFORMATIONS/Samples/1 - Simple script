@@ -1,4 +1,0 @@
-var popbysex = Knoema.UseDataset("popBySex");
-popbysex.LoadData(popbysex.Dimensions["Series"]["SP.POP.TOTL.FE.IN", "SP.POP.TOTL.MA.IN"], popbysex.Dimensions["Country"]["IN"]);
-popbysex["IN", "SP.POP.TOTL", Frequency.Annual, "Value"] = popbysex["IN", "SP.POP.TOTL.MA.IN", Frequency.Annual, "Value"]+popbysex["IN", "SP.POP.TOTL.FE.IN", Frequency.Annual, "Value"];
-popbysex.SaveData(SaveOptions.Update);

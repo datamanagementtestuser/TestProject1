@@ -1,0 +1,59 @@
+{
+   "TargetDatasetPath": "Samples\\Mapping dataset data transfer target dataset",
+   "SourceDatasetPath": "Samples\\Mapping dataset",
+   "IsSourceDataset": false,
+   "AddNewElementsToDimensions": false,
+   "Action": "Overwrite",
+   "DimensionMapping": [
+      {
+         "TargetDimension": "Continent",
+         "SourceDimension": "Continent"
+      },
+      {
+         "TargetDimension": "Country",
+         "SourceDimension": "Country"
+      },
+      {
+         "TargetDimension": "Indicator",
+         "SourceDimension": "Indicator"
+      }
+   ],
+   "SourceTargetMapping": [
+      {
+         "Field": "Output unit",
+         "Mapping": "Units"
+      },
+      {
+         "Field": "Output scale",
+         "Mapping": "Scale"
+      },
+      {
+         "Field": "Output/Source frequency",
+         "Mapping": "OutputFrequency"
+      },
+      {
+         "Field": "Source dataset",
+         "Mapping": "Source Dataset"
+      },
+      {
+         "Field": "Source dimensions",
+         "Mapping": "Source dimensions"
+      },
+      {
+         "Field": "Source codes",
+         "Mapping": "Dimensions codes"
+      },
+      {
+         "Field": "Source value",
+         "Mapping": "Dimensions values"
+      },
+      {
+         "Field": "Source scale",
+         "Mapping": "SourceDataScale"
+      }
+   ],
+   "Filters": null,
+   "PublicationDate": "",
+   "AccessedOn": "",
+   "NextReleaseDate": ""
+}

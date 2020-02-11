@@ -1,0 +1,16 @@
+{
+   "DatasetPath": "Samples\\IMF _ World Economic Outlook (WEO) Database, April 2018",
+   "Kind": 9,
+   "Filters": [
+      {
+         "DimensionName": "Frequency",
+         "Elements": [
+            "A"
+         ]
+      }
+   ],
+   "CheckAddedValues": true,
+   "CheckRemovedValues": true,
+   "CheckChangedValues": true,
+   "ComparatorDatasetPath": "Samples\\IMF _ World Economic Outlook (WEO) Database, October 2018"
+}

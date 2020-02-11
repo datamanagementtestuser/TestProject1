@@ -1,0 +1,19 @@
+{
+   "DatasetPath": "Samples\\IMF _ World Economic Outlook (WEO) Database, April 2018",
+   "Kind": 1,
+   "Filters": [
+      {
+         "DimensionName": "Country",
+         "Elements": [
+            "534"
+         ]
+      },
+      {
+         "DimensionName": "Frequency",
+         "Elements": [
+            "A"
+         ]
+      }
+   ],
+   "Threshold": 30
+}

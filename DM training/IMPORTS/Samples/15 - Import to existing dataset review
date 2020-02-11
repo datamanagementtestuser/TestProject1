@@ -1,0 +1,127 @@
+{
+   "TargetDataset": {
+      "DatasetPath": "Samples\\Weo test dataset",
+      "Metadata": {
+         "Name": "Weo test dataset",
+         "DatasetId": "",
+         "Host": "",
+         "Description": "",
+         "Source": "",
+         "ReferenceUrl": "",
+         "PublicationDate": "",
+         "AccessedOn": "",
+         "NextReleaseDate": "",
+         "UpdatePriority": ""
+      }
+   },
+   "DataSource": {
+      "Id": "XLSX",
+      "File": "C:\\Temp\\Training\\Import to existing dataset review.xlsx",
+      "Sheet": "",
+      "UnpivotDataTop": 1,
+      "UnpivotDataLeft": 9,
+      "TableTop": 0,
+      "TableLeft": 0
+   },
+   "Bindings": {
+      "Mappings": [
+         {
+            "SourceField": "0",
+            "TargetType": "Dimension",
+            "DimensionName": "Country",
+            "DimensionAttribute": "Id",
+            "IgnoreList": [
+               "",
+               "314",
+               "International Monetary Fund, World Economic Outlook Database, October 2019"
+            ],
+            "ReplaceMap": [
+               {
+                  "Value": "51221",
+                  "ReplaceWith": "512"
+               },
+               {
+                  "Value": "9144",
+                  "ReplaceWith": "914"
+               }
+            ]
+         },
+         {
+            "SourceField": "2",
+            "TargetType": "Dimension",
+            "DimensionName": "Subject",
+            "DimensionAttribute": "Id",
+            "IgnoreList": [
+               ""
+            ],
+            "ReplaceMap": [
+               {
+                  "Value": "_NGDP_RPCH",
+                  "ReplaceWith": "NGDP_RPCH"
+               },
+               {
+                  "Value": "NGDP_",
+                  "ReplaceWith": "NGDP"
+               }
+            ]
+         },
+         {
+            "SourceField": "6",
+            "TargetType": "Unit",
+            "IgnoreList": [],
+            "ReplaceMap": []
+         },
+         {
+            "SourceField": "7",
+            "TargetType": "Scale",
+            "IgnoreList": [],
+            "ReplaceMap": []
+         },
+         {
+            "SourceField": "9",
+            "TargetType": "Date",
+            "IgnoreList": [
+               "Estimates Start After"
+            ],
+            "ReplaceMap": [
+               {
+                  "Value": "1985Y1",
+                  "ReplaceWith": "1985"
+               },
+               {
+                  "Value": "_1995",
+                  "ReplaceWith": "1995"
+               }
+            ]
+         },
+         {
+            "SourceField": "10",
+            "TargetType": "Value",
+            "IgnoreList": [
+               "n/a",
+               "n/aa"
+            ],
+            "ReplaceMap": [
+               {
+                  "Value": "a32.344",
+                  "ReplaceWith": "32.344"
+               }
+            ]
+         }
+      ],
+      "Fixed": []
+   },
+   "Action": "Update",
+   "DateFormat": "",
+   "CultureId": "",
+   "EmptyValueText": "",
+   "ReviewData": true,
+   "AddNewElementsToDimensions": false,
+   "ValidationRules": {
+      "UseMissingValuesRule": false,
+      "UseMissingUnitsRule": false,
+      "UseMissingHierarchyRule": false,
+      "UseMissingRegionRule": false,
+      "UseDuplicateNamesRule": false
+   }
+}
